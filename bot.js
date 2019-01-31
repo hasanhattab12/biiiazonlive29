@@ -3,12 +3,12 @@ const client = new Discord.Client();
 var prefix = "c";
 var adminprefix = '-'
 
-const developers = ["507997411101114379"]
+const developers = ["511173373905207297"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
-  if (message.content.startsWith(adminprefix + 'p')) {
+  if (message.content.startsWith(adminprefix + 'g')) {
     client.user.setGame(argresult);
       message.channel.send(`**✅   ${argresult}**`)
   } else 
